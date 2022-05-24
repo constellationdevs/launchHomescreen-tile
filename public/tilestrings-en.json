@@ -1,0 +1,149 @@
+[
+  { "code": "999101", "string": "Home Screen" },
+  { "code": "100500", "string": "Updating dashboard..." },
+  { "code": "100501", "string": "Hiding Account..." },
+  { "code": "100502", "string": "Adding Account..." },
+  { "code": "100503", "string": "Updating dashboard..." },
+  { "code": "100504", "string": "Hiding Tile..." },
+  { "code": "100505", "string": "Adding Tile..." },
+  { "code": "100506", "string": "Updating dashboard..." },
+  { "code": "100507", "string": "We had some trouble getting your accounts." },
+  { "code": "100508", "string": "retry" },
+  { "code": "100509", "string": "Communication Center" },
+  { "code": "100510", "string": "Profile" },
+  { "code": "100511", "string": "Security Settings" },
+  { "code": "100512", "string": "Logout" },
+  { "code": "100513", "string": "Are you sure you want to logout?" },
+  { "code": "100514", "string": "No transaction data available" },
+  { "code": "100516", "string": "Additional Services" },
+  { "code": "100517", "string": "No Additional Services Available" },
+  {
+    "code": "100518",
+    "string": "Here is where services go to hide. If you do not want to see a service on your main page then swipe to hide them and they will come here. Sometimes your CU will place infrequently used services here to clear up clutter. Please check back from time to time to see what’s available"
+  },
+  { "code": "100519", "string": "Services" },
+  { "code": "100520", "string": "Add Services" },
+  { "code": "100521", "string": "Clear All" },
+
+  { "code": "100522", "string": "No Additional Accounts Available" },
+  {
+    "code": "100523",
+    "string": "Here is where accounts go to hide. If you do not want to see an account on your main page then swipe to hide them and they will come here."
+  },
+  { "code": "100524", "string": "Add Accounts" },
+  {
+    "code": "100525",
+    "string": "Available Accounts"
+  },
+  {
+    "code": "100526",
+    "string": "My Accounts"
+  },
+  {
+    "code": "100527",
+    "string": "View All Accounts"
+  },
+  {
+    "code": "100528",
+    "string": "Add an Account"
+  },
+  {
+    "code": "100529",
+    "string": "No"
+  },
+  {
+    "code": "100530",
+    "string": "Yes"
+  },
+  {
+    "code": "100531",
+    "string": "Click to refresh"
+  },
+  {
+    "code": "100532",
+    "string": "Logging user out..."
+  },
+  {
+    "code": "100533",
+    "string": "Delete User Account"
+  },
+  {
+    "code": "100534",
+    "string": "OK"
+  },
+  {
+    "code": "100535",
+    "string": "Are you sure you want to delete your account?"
+  },
+  {
+    "code": "100536",
+    "string": "You will be immediately logged out and required to re-enroll to regain access to online banking."
+  },
+  {
+    "code": "100537",
+    "string": "Cancel"
+  },
+  {
+    "code": "100538",
+    "string": "Delete"
+  },
+  {
+    "code": "100539",
+    "string": "Attempting to delete user account..."
+  },
+  {
+    "code": "100540",
+    "string": "Account Deleted"
+  },
+  {
+    "code": "100541",
+    "string": "Your account has been successfully deleted. You will now be logged out."
+  },
+  {
+    "code": "100542",
+    "string": "Password must be a string and cannot be blank"
+  },
+  {
+    "code": "100543",
+    "string": "Current Password does not match"
+  },
+  {
+    "code": "100544",
+    "string": "Your account has been locked due to password failures"
+  },
+  {
+    "code": "100545",
+    "string": "Your account has been locked. Please contact your credit union to speak to a representative."
+  },
+  {
+    "code": "100546",
+    "string": "We are unable to delete your account due to the future dated transfers currently set up."
+  },
+  {
+    "code": "100547",
+    "string": "Please go to Transfers and cancel all future dated transfers, then retry deleting your account."
+  },
+  {
+    "code": "100548",
+    "string": "Go to Your Transfers"
+  },
+  {
+    "code": "100549",
+    "string": "Privacy Policy"
+  },
+  {
+    "code": "100550",
+    "string": "Requesting deletion..."
+  },
+
+  {
+    "code": "100600",
+    "string": "We had some trouble getting your favorite account."
+  },
+  { "code": "100601", "string": "retry" },
+  {
+    "code": "100602",
+    "string": "We had some trouble getting your account list."
+  },
+  { "code": "100603", "string": "retry" }
+]

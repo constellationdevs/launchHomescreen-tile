@@ -1,0 +1,35 @@
+{
+  "openData": {
+    "actionType": 3,
+    "component":"HomePage",
+    "pageName": "home",
+    "pageTitle": "Home Screen",
+    "openData": {
+      "templateID": 1,
+      "componentID": "homePage",
+      "data": {
+        "Hero": {
+          "componentID": "hero",
+          "templateID": 1,
+          "dataSource": {
+            "type": 1,
+            "connectorName": "demo",
+            "connectorMethod": "getAccountCards",
+            "connectorVersion": "1.0.0",
+            "params": {}
+          }
+        },
+        "TileDrawer": {
+          "componentID": "TileDrawer",   
+          "templateID": 1,       
+          "dataSource": {
+            "type": 2
+          }
+        }
+      }
+    }
+  },
+  "config": {   
+    "primaryTileColor": "#00a950"
+  }
+}

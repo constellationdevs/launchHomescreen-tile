@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "message": "",
+  "data": {
+    "PreviewTypes": ["Icon", "SummaryList", "Summary"],
+    "PreviewDefault": "SummaryList",
+    "Title": "Branch Locator",
+    "CallOut": "Closet Branches",
+    "Details1Icon": "",
+    "Details1": "",
+    "Details2Icon": "",
+    "Details2": "",
+    "Image": "",
+    "BackgroundColor": { "CDPClass": "red", "HexColor": "" },
+    "Transactions": [
+      { "Title": "Main Branch", "Detail": "123 Main st", "Image1": "", "Image2": "", "CallOut1Icon": "", "CallOut1": "Raleigh, NC", "CallOut2Icon": "", "CallOut2": "12345" },
+      { "Title": "Other Branch", "Detail": "100 2nd  st", "Image1": "", "Image2": "", "CallOut1Icon": "", "CallOut1": "Apex, NC", "CallOut2Icon": "", "CallOut2": "98765" }
+    ]
+  }
+}

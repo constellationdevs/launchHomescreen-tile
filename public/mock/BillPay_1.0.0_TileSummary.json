@@ -1,0 +1,29 @@
+{
+    "success": true,
+    "message": "",
+    "data": {
+      "PreviewTypes": ["Icon", "SummaryList", "Summary"],
+      "PreviewDefault": "SummaryList",
+      "Title": "BillPay",
+      "CallOut": "Here are your last bills",
+      "Details1Icon": "",
+      "Details1": "Click for more details",
+      "Details2Icon": "",
+      "Details2": "",
+      "Image": "",
+      "BackgroundColor": { "CDPClass": "blue", "HexColor": "" },
+      "Transactions": [
+        { "Title": "Utility", "Detail": "Electricity Bill", "Image1": "", "Image2": "", "CallOut1Icon": "", "CallOut1": "$105.98", "CallOut2Icon": "", "CallOut2": "" },
+        {
+          "Title": "Phone",
+          "Detail": "Google Fi",
+          "Image1": "",
+          "Image2": "",
+          "CallOut1Icon": "",
+          "CallOut1": "$68.17",
+          "CallOut2Icon": "",
+          "CallOut2": ""
+        }
+      ]
+    }
+  }

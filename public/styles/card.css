@@ -1,0 +1,547 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+/* slate */
+/* storm */
+/* cloud */
+/* border */
+ons-toolbar-button:focus,
+button:focus,
+.button:focus,
+.button[role=button]:focus,
+.button[role=link]:focus,
+.fab:focus,
+ons-card:focus,
+.cdpCard:focus {
+  box-shadow: 0 0 0 2px #3F93D2 !important;
+  outline: none !important;
+}
+.list-item[tappable]:focus,
+.list-item[role=button]:focus,
+.list-item[role=link]:focus,
+.select-input:focus,
+ons-card:focus {
+  border: 2px solid #3F93D2 !important;
+  outline: none !important;
+  margin: 0;
+}
+#tmpAlerts ons-card:focus {
+  border: 2px solid #3F93D2 !important;
+  outline: none;
+}
+.page__background {
+  background-color: #fff;
+}
+.cdp_page_container .cdp_list_container {
+  background-color: #DFE9F3;
+  position: relative;
+  height: 100%;
+  padding-bottom: 80vh;
+  overflow-y: auto;
+}
+.unAuth .page__background {
+  top: 0 !important;
+}
+.unAuth .cdp_page_container {
+  margin-top: 0;
+}
+.unAuth#homePage .cdp_hero {
+  display: none;
+}
+.unAuth #TilesHeaderContainer {
+  display: none;
+}
+@keyframes cdp_opactiy-pulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.cdpPulseLoader {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+.loaderPlaceholder {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+ons-card {
+  overflow: hidden;
+  position: relative;
+}
+ons-card .fa-ellipsis-v,
+ons-card .fa-arrows {
+  color: #fff;
+  font-size: 26px;
+}
+ons-card .cardHeader {
+  color: #fff;
+  padding: 9px;
+  position: relative;
+  display: flex;
+}
+ons-card .cardHeader h1,
+ons-card .cardHeader h2,
+ons-card .cardHeader h3,
+ons-card .cardHeader h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 22px;
+  margin: 0;
+}
+ons-card .cardHeader h1 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+ons-card .cardHeader h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  width: 94%;
+}
+ons-card .cardHeader h3,
+ons-card .cardHeader h4 {
+  font-size: 12px;
+}
+ons-card .cardHeader .openTile {
+  position: absolute;
+  right: 16px;
+  top: 39%;
+}
+ons-card .cardHeader .openTile i {
+  font-size: 24px;
+}
+ons-card .cardHeader .sub-title {
+  letter-spacing: 0.5px;
+}
+ons-card .cardHeader .sub-title-alternate {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+ons-card .cardHeader .headerContainer {
+  width: 65%;
+}
+ons-card .cardHeader .headerContainer.noImage {
+  width: 100%;
+}
+ons-card .cardHeader .imageContainer {
+  margin: -16px 0;
+  width: 32%;
+}
+ons-card .cardHeader .imageContainer .headerImage {
+  width: 100%;
+  height: 100%;
+}
+ons-card .cardBody ons-list {
+  background-image: none;
+}
+ons-card .cardBody ons-list ons-list-item .centerImage {
+  width: 120px;
+}
+ons-card .cardBody ons-list .calloutContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+ons-card.default {
+  background-color: #00a950;
+}
+ons-card.accountCard {
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 16px;
+  min-height: 160px;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+}
+ons-card.accountCard .cardHeader {
+  padding: 24px;
+}
+ons-card.accountCard .cardHeader .headerContainer {
+  width: 100%;
+}
+ons-card.accountCard .cardHeader .headerContainer .accountNameNumber {
+  height: 27px;
+}
+ons-card.accountCard .cardHeader .headerContainer .accountNameNumber span {
+  line-height: 20px;
+}
+ons-card.accountCard .cardHeader .headerContainer .accountNameNumber .nick-name,
+ons-card.accountCard .cardHeader .headerContainer .accountNameNumber .sub-title-alternate {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+ons-card.accountCard .cardHeader .headerContainer .accountNameNumber .nick-name {
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+ons-card.accountCard .cardHeader .headerContainer .accountNameNumber .sub-title-alternate {
+  text-transform: uppercase;
+  color: #b4c3d2;
+  max-width: 30%;
+}
+ons-card.accountCard .cardHeader .headerContainer .accountNameNumber .card-number {
+  font-size: 13px !important;
+  font-weight: bold;
+  margin-left: 8px;
+}
+ons-card.accountCard .cardHeader .headerContainer .balance-item {
+  color: #000;
+  display: block;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  margin-top: 4px;
+  height: 26px;
+}
+ons-card.accountCard .cardBody {
+  background-color: rgba(223, 233, 243, 0.5);
+  border-top: solid 1px #DFE9F3;
+  height: 58px;
+}
+ons-card.accountCard .cardBody .meta-field {
+  position: relative;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 16px;
+  width: 50%;
+  overflow: hidden;
+}
+ons-card.accountCard .cardBody .meta-field:nth-child(2) {
+  border-left: solid 1px #DFE9F3;
+}
+ons-card.accountCard .cardBody .meta-field .calloutBlock {
+  position: relative;
+  display: inline-block;
+  background-color: #00a950;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  margin-right: 9px;
+}
+ons-card.accountCard .cardBody .meta-field .calloutBlock.calloutImg {
+  background-color: transparent;
+}
+ons-card.accountCard .cardBody .meta-field .calloutBlock.calloutImg img {
+  width: 25px;
+}
+ons-card.accountCard .cardBody .meta-field .calloutBlock.calloutIcon {
+  min-width: 26px;
+  height: 26px;
+  line-height: 26px;
+}
+ons-card.accountCard .cardBody .meta-field .calloutBlock.calloutIcon ons-icon {
+  font-size: 14px;
+}
+ons-card.accountCard .cardBody .meta-field .calloutBlock.calloutText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 26px;
+  min-width: 26px;
+  max-width: 53px;
+  padding: 0 5px;
+}
+ons-card.accountCard .cardBody .meta-field .preview-label {
+  position: relative;
+  display: inline-block;
+  color: #b4c3d2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 90%;
+  line-height: 11px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  margin-bottom: -5px;
+}
+ons-card.accountCard .cardBody .meta-field .preview-label:only-child {
+  line-height: 51px;
+}
+ons-card.accountCard .cardBody .meta-field .preview-value {
+  position: relative;
+  display: block;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 11px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+ons-card.accountCard .cardBody .meta-field .preview-value:only-child {
+  line-height: 51px;
+}
+ons-card.accountCard .cardBody .meta-field .previewContainer {
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  width: 80%;
+  height: 58px;
+  padding: 5px;
+  line-height: 20pt;
+}
+ons-card.acctPreviewCard {
+  min-height: auto;
+}
+ons-card.acctPreviewCard .card-number,
+ons-card.acctPreviewCard .nick-name,
+ons-card.acctPreviewCard .balance-item {
+  width: 80%;
+  height: 20px;
+  max-width: 80% !important;
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+ons-card.acctPreviewCard .cardBody .calloutIcon {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+ons-card.acctPreviewCard .cardBody .calloutText {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+  min-height: 20px;
+}
+ons-card.acctPreviewCard .cardBody .preview-label,
+ons-card.acctPreviewCard .cardBody .preview-value {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+  height: 20px;
+  width: 90%;
+}
+.cdpTile {
+  position: relative;
+  overflow: hidden;
+}
+.cdpTile.tileSortSelected {
+  transform: skew(4deg, -4deg);
+}
+.cdpTile.tileSortSelected ons-card {
+  left: 0;
+}
+.cdpTile.tileSortSelected .HideContainer,
+.cdpTile.tileSortSelected .ActionContainer {
+  display: none;
+}
+.cdpTile.sortableGhost .HideContainer,
+.cdpTile.sortableGhost .ActionContainer {
+  display: none;
+}
+.cdpTile .loader .DismissItemContainer,
+.cdpTile .loader .HideContainer,
+.cdpTile .loader .ActionContainer {
+  display: none;
+}
+.cdpTile .loader ons-card {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+.cdpTile .loader ons-card .cardHeader {
+  background-image: none !important;
+}
+.cdpTile .loader ons-card h1 {
+  color: #26323D !important;
+}
+.cdpCard {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+}
+.cdpCard ons-card {
+  margin: 0;
+}
+.iconCard {
+  width: 167px;
+}
+.iconCard ons-card {
+  height: 150px;
+}
+.iconCard ons-card .cardHeader {
+  text-align: center;
+  padding: 0;
+  height: 75%;
+  position: relative;
+  overflow: hidden;
+}
+.iconCard ons-card .cardHeader img {
+  width: 75px;
+  height: 75px;
+}
+.iconCard ons-card .cardBody {
+  background-color: inherit;
+  height: 25%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px 16px;
+}
+.iconCard ons-card .cardBody h1 {
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: unset;
+}
+.summaryCard {
+  width: 335px;
+}
+.summaryCard ons-card {
+  min-height: 90px;
+}
+.summaryCard ons-card .cardHeader {
+  padding: 16px;
+}
+.summaryCard ons-card .cardBody {
+  padding: 0;
+  height: 0;
+}
+.summarylistCard {
+  width: 335px;
+}
+.summarylistCard ons-card {
+  min-height: 180px;
+}
+.summarylistCard ons-card .cardHeader {
+  padding: 16px;
+}
+.summarylistCard ons-card .cardBody {
+  height: 128px;
+}
+.acctPreviewCard2 {
+  width: 100%;
+}
+.acctPreviewCard2 .cdpCard {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+.acctPreviewCard2 .fadeLeft,
+.acctPreviewCard2 .fadeRight {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 48px;
+}
+.acctPreviewCard2 .fadeLeft {
+  left: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff 100%);
+}
+.acctPreviewCard2 .fadeRight {
+  right: 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 100%);
+}
+.acctPreviewCard2 .loading #balanceHeader h1,
+.acctPreviewCard2 .loading #balanceHeader h2 {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+  margin: 0 auto !important;
+}
+.acctPreviewCard2 .loading #balanceHeader h1 {
+  height: 20px;
+  width: 200px;
+  margin-bottom: 9px !important;
+}
+.acctPreviewCard2 .loading #balanceHeader h2 {
+  height: 32px;
+  width: 150px;
+}
+.acctPreviewCard2 .loading .acctChartContainer {
+  padding-top: 0 !important;
+  margin-top: 32px !important;
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+.acctPreviewCard1,
+.acctPreviewCard3 {
+  width: 335px;
+  margin: 0 auto;
+}
+.iconCardTransition {
+  width: 167px !important;
+  display: inline-block;
+  opacity: 0.3;
+  border-radius: 10px;
+}
+.iconCardTransition .cardHeader {
+  height: 150px;
+}
+.iconCardTransition .cardBody {
+  height: 0;
+  padding: 0;
+}
+.iconCardTransition ons-card {
+  height: 150px;
+}
+.iconCardTransition ons-card > * {
+  visibility: hidden;
+}
+.summaryCardTransition {
+  width: 335px !important;
+  opacity: 0.3;
+}
+.summaryCardTransition ons-card {
+  height: 115px;
+}
+.summaryCardTransition ons-card > * {
+  visibility: hidden;
+}
+.summarylistCardTransition {
+  width: 335px !important;
+  opacity: 0.3;
+}
+.summarylistCardTransition ons-card {
+  height: 226px !important;
+}
+.summarylistCardTransition ons-card .cardHeader {
+  height: 106px;
+}
+.summarylistCardTransition ons-card .cardBody {
+  height: 162px;
+}
+.summarylistCardTransition ons-card > * {
+  visibility: hidden;
+}
+@media only screen and (max-width: 400px) {
+  .nick-name {
+    max-width: 60%;
+  }
+  .sub-title-alternate {
+    max-width: 40%;
+  }
+}

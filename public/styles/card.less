@@ -1,0 +1,657 @@
+  @import 'variables';
+  @import 'shared';
+
+
+  ons-card {
+
+      overflow: hidden;
+      position: relative;
+
+
+      .fa-ellipsis-v,
+      .fa-arrows {
+          color: @white;
+          font-size: 26px;
+      }
+
+      // Card Header Defaults
+      .cardHeader {
+          color: #fff;
+          padding: 9px;
+          position: relative;
+          display: flex;
+
+          h1,
+          h2,
+          h3,
+          h4 {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              line-height: 22px;
+              margin: 0;
+          }
+
+          h1 {
+              color: fade(#FFF, 75%);
+              font-size: 13px;
+              font-weight: bold;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              margin: 0;
+          }
+
+          h2 {
+              font-size: 20px;
+              font-weight: bold;
+              margin: 0;
+              width: 94%;
+          }
+
+          h3,
+          h4 {
+              font-size: 12px;
+          }
+
+          .openTile {
+              position: absolute;
+              right: 16px;
+              top: 39%;
+
+              i {
+                  font-size: 24px;
+              }
+          }
+
+          .sub-title {
+              letter-spacing: .5px;
+          }
+
+          .sub-title-alternate {
+              font-weight: 900;
+              letter-spacing: .5px;
+          }
+
+          .headerContainer {
+              width: 65%;
+
+              &.noImage {
+                  width: 100%;
+              }
+          }
+
+          .imageContainer {
+              margin: -16px 0;
+              width: 32%;
+
+              .headerImage {
+                  width: 100%;
+                  height: 100%;
+
+              }
+          }
+      }
+
+      // Card Body Defaults
+      .cardBody {
+
+
+          ons-list {
+              background-image: none;
+
+              ons-list-item {
+                  .centerImage {
+                      width: 120px;
+                  }
+              }
+
+
+              .calloutContainer {
+                  display: flex;
+                  align-items: center;
+                  flex-direction: row;
+                  width: 100%
+              }
+
+          }
+
+      }
+
+      &.default {
+          background-color: @primaryThemeColor;
+      }
+
+
+
+      // this is the carousel card
+      &.accountCard {
+          //border: solid 1px @lightGrey;
+          border-radius: 8px;
+          font-size: 18px;
+          margin: 16px;
+          min-height: 160px;
+         // width: 100%;
+          box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+
+          .cardHeader {
+              padding: 24px;
+         
+              .headerContainer {
+                  width: 100%;
+
+                .accountNameNumber {
+                    height: 27px; //native and desktop had different height so setting it here
+
+                    span {
+                        line-height: 20px;
+
+                    }
+                    .nick-name, .sub-title-alternate {
+                        display: inline-block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                    .nick-name {
+                        color: @black;
+                        font-weight: bold;
+                        font-size: 13px;
+                        text-overflow: ellipsis;
+                        max-width: 70%;
+                    }
+
+                    .sub-title-alternate {
+                  
+                    text-transform: uppercase;
+                    color: @mediumGrey;
+                    max-width: 30%;
+                    }
+
+                    .card-number {
+                        font-size: 13px !important;
+                        font-weight: bold;
+                        margin-left: 8px;
+                    }
+                }
+
+                  .balance-item {
+                      color: @black;
+                      display: block;
+                      font-weight: 900;
+                      font-size: 24px;
+                      line-height: 26px;
+                      letter-spacing: -.5px;
+                      margin-top: 4px;
+                      height: 26px;
+
+                  }
+              }
+          }
+
+          .cardBody {
+              background-color: fade(#dfe9f3, 50%);
+              border-top: solid 1px #DFE9F3;
+              height: 58px;
+
+              .meta-field {
+                  position: relative;
+                  font-size: .8em;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  padding-left: 16px;
+                  width: 50%;
+                  overflow: hidden;
+
+                  &:nth-child(2) {
+                      border-left: solid 1px @lightGrey;
+                  }
+
+                  .calloutBlock {
+                      position: relative;
+                      display: inline-block;
+                      background-color: @primaryThemeColor;
+                      color: @white;
+                      border-radius: 6px;
+                      text-align: center;
+                      margin-right: 9px;
+
+                      &.calloutImg {
+                          background-color: transparent;
+
+                          img {
+                              width: 25px;
+                          }
+                      }
+
+                      &.calloutIcon {
+                          min-width: 26px;
+                          height: 26px;
+                          line-height: 26px;
+
+                          ons-icon {
+                              font-size: 14px;
+                          }
+                      }
+
+                      &.calloutText {
+                          text-overflow: ellipsis;
+                          overflow: hidden;
+                          line-height: 26px;
+                          min-width: 26px;
+                          max-width: 53px;
+                          padding: 0 5px;
+                      }
+                  }
+
+
+
+                  .preview-label {
+                      position: relative;
+                      display: inline-block;
+                      color: @mediumGrey;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      text-transform: uppercase;
+                      white-space: nowrap;
+                      width: 90%;
+                      line-height: 11px;
+                      font-size: 11px;
+                      letter-spacing: .5px;
+                      letter-spacing: .5px;
+                      margin-bottom: -5px;
+
+                      &:only-child {
+                          line-height: 51px;
+                      }
+                  }
+
+                  .preview-value {
+                      position: relative;
+                      display: block;
+                      color: @black;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      text-transform: uppercase;
+                      white-space: nowrap;
+                      line-height: 11px;
+                      font-size: 11px;
+                      letter-spacing: .5px;
+
+                      &:only-child {
+                          line-height: 51px;
+                      }
+                  }
+
+
+
+                  .previewContainer {
+                      display: inline-block;
+                      font-weight: bold;
+                      position: relative;
+                      width: 80%;
+                      height: 58px;
+                      padding: 5px;
+                      line-height: 20pt;
+                  }
+              }
+          }
+
+      }
+
+      &.acctPreviewCard {
+          min-height: auto;
+
+          .card-number,
+          .nick-name,
+          .balance-item {
+              width: 80%;
+              height: 20px;
+              max-width: 80% !important;
+              .loaderPlaceholder();
+          }
+      
+
+          .cardBody {
+              .calloutIcon {
+
+                  .loaderPlaceholder();
+              }
+
+              .calloutText {
+                  .loaderPlaceholder();
+                  min-height: 20px;
+              }
+
+              .preview-label,
+              .preview-value {
+                  .loaderPlaceholder();
+                  height: 20px;
+                  width: 90%;
+              }
+
+          }
+      }
+  }
+
+
+
+  .cdpTile {
+      position: relative;
+      // transition: all .5s linear;  //this caused the skew to be slow
+      overflow: hidden;
+
+
+      &.tileSortSelected {
+          transform: skew(4deg, -4deg);
+
+          ons-card {
+              left: 0;
+          }
+
+          .HideContainer,
+          .ActionContainer {
+              display: none;
+          }
+      }
+
+      &.sortableGhost {
+
+          .HideContainer,
+          .ActionContainer {
+              display: none;
+          }
+      }
+
+      .loader {
+
+          .DismissItemContainer,
+          .HideContainer,
+          .ActionContainer {
+              display: none;
+          }
+
+          ons-card {
+              .loaderPlaceholder();
+
+              .cardHeader {
+                  background-image: none !important;
+              }
+
+            
+              h1 {
+                  color: @fontColor  !important;
+              }
+
+          }
+      }
+
+
+  }
+
+  // high level card css
+  .cdpCard {
+      position: relative;
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: @white;
+      box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+
+      ons-card {
+          margin: 0;
+      }
+
+
+
+  }
+
+
+
+  // end high level card css
+
+
+  // specfic card css
+  .iconCard {
+      width: 167px;
+
+      ons-card {
+
+          height: 150px;
+
+
+          .cardHeader {
+              text-align: center;
+              padding: 0;
+              height: 75%;
+              position: relative;
+              overflow: hidden;
+
+              img {
+                  width: 75px;
+                  height: 75px;
+              }
+
+
+          }
+
+          .cardBody {
+              background-color: inherit;
+              height: 25%;
+              display: flex;
+              position: relative;
+              overflow: hidden;
+              align-items: center;
+              justify-content: center;
+              padding: 0 16px 16px;
+
+              h1 {
+                  color: @white;
+                  font-weight: bold;
+                  margin: 0;
+                  font-size: 1em;
+                  text-align: center;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  line-height: unset;
+              }
+          }
+      }
+  }
+
+  .summaryCard {
+
+      width: 335px;
+
+
+      ons-card {
+          min-height: 90px;
+
+          .cardHeader {
+              padding: 16px;
+
+
+          }
+
+          .cardBody {
+              padding: 0;
+              height: 0;
+          }
+      }
+  }
+
+  .summarylistCard {
+
+      width: 335px;
+
+      ons-card {
+          min-height: 180px;
+
+          .cardHeader {
+              padding: 16px;
+          }
+
+          .cardBody {
+              height: 128px;
+          }
+      }
+  }
+
+
+
+  .acctPreviewCard2 {
+      width: 100%;
+
+      .cdpCard {
+          box-shadow: none;
+          border: none;
+          border-radius: 0;
+          margin: 0;
+      }
+
+      .fadeLeft,
+      .fadeRight {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 48px;
+      }
+
+      .fadeLeft {
+          left: 0;
+          background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
+      }
+
+      .fadeRight {
+          right: 0;
+          background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
+      }
+
+      .loading {
+          #balanceHeader {
+
+              h1,
+              h2 {
+                  .loaderPlaceholder();
+                  margin: 0 auto !important;
+              }
+
+              h1 {
+                  height: 20px;
+                  width: 200px;
+                  margin-bottom: 9px !important;
+              }
+
+              h2 {
+                  height: 32px;
+                  width: 150px;
+              }
+          }
+
+          .acctChartContainer {
+              padding-top: 0 !important;
+              margin-top: 32px !important;
+              .loaderPlaceholder();
+          }
+      }
+  }
+
+  .acctPreviewCard1,
+  .acctPreviewCard3 {
+      width: 335px;
+      margin: 0 auto;
+  }
+
+
+
+  // Start Transitions for card resize
+  .iconCardTransition {
+
+      width: 167px !important;
+      display: inline-block;
+      opacity: .3;
+      border-radius: 10px;
+
+      .cardHeader {
+          height: 150px;
+      }
+
+      .cardBody {
+          height: 0;
+          padding: 0;
+      }
+
+      //hide content
+      ons-card {
+          height: 150px;
+
+          &>* {
+              visibility: hidden;
+          }
+      }
+
+
+  }
+
+  .summaryCardTransition {
+
+      width: 335px !important;
+      opacity: .3;
+
+      ons-card {
+          height: 115px;
+
+          &>* {
+              visibility: hidden;
+          }
+      }
+
+
+  }
+
+  .summarylistCardTransition {
+      width: 335px !important;
+      opacity: .3;
+
+      ons-card {
+          height: 226px !important;
+
+          .cardHeader {
+              height: 106px;
+          }
+
+          .cardBody {
+              height: 162px;
+          }
+
+          &>* {
+              visibility: hidden;
+          }
+      }
+
+
+  }
+
+  // End Transitions for card resize
+
+  @media only screen and (min-width: 1155px) {}
+
+  // one column mobile view
+  @media only screen and (min-width: 773px) and (max-width: 1154px) {}
+
+  // one column mobile view
+  @media only screen and (max-width: 772px) {}
+
+  // max-width shift for acccount nickname/number on mobile
+  @media only screen and (max-width: 400px) {
+    .nick-name {
+        max-width: 60%;
+    }
+
+    .sub-title-alternate {
+        max-width: 40%;
+    }
+  }
+
+
+  

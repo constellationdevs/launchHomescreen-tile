@@ -1,0 +1,28 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "config/*.js", "config/env.js", "node_modules/**/*.ts", "coverage/lcov-report/*.js", "src/services/moment-timezone-with-data-10-year-range.js"]
+  },
+  "rules": {
+    "object-literal-sort-keys": false,
+    "no-bind": false,
+    "no-console": false,
+    "ordered-imports": false,
+    "jsx-no-lambda": false,
+    "class-name": false,
+    "member-access": false,
+    "jsx-self-close": false,
+    "no-unused-expression": false,
+    "no-unused-variable": [false],
+    "no-bitwise": false,
+    "curly": [true, "ignore-same-line"],
+    "react/jsx-no-bind":[true,{
+"allowBind": true
+    }]
+    
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false,
+    "no-console": false
+  }
+}

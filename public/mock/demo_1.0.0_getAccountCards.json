@@ -1,0 +1,605 @@
+{  "success": true,
+  "message": "",
+  "data": [
+    
+    
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": false,
+      "sortOrder": 1,
+      "item": {
+        "nickname": "CLASSIC CHECKING",
+        "balance": "$6,291.76",
+        "accountNumber": "*******020",
+        "accountId": "13679S0020",
+        "previewMeta": [
+          {
+            "displayName": "Type",
+            "displayValue": "Deposit",
+            "callOutText": "",
+            "callOutIconClass": "fa-check",
+            "callOutDataUrl": ""
+          },
+          {
+            "displayName": "Note",
+            "displayValue": "Checking",
+            "callOutText": "",
+            "callOutIconClass": "fa-sticky-note",
+            "callOutDataUrl": ""
+          }
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13679S0020"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679S0020"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679S0020"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": true,
+      "sortOrder": 2,
+      "item": {
+        "nickname": "Savings",
+        "balance": "$8,939.81",
+        "accountNumber": "*******001",
+        "accountId": "13679S0001",
+        "previewMeta": [
+          {
+            "displayName": "Type",
+            "displayValue": "Deposit",
+            "callOutText": "",
+            "callOutIconClass": "fa-check",
+            "callOutDataUrl": ""
+          },
+          {
+            "displayName": "Note",
+            "displayValue": "Savings",
+            "callOutText": "",
+            "callOutIconClass": "fa-sticky-note",
+            "callOutDataUrl": ""
+          }
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13679S0001"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679S0001"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679S0001"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": false,
+      "sortOrder": 4,
+      "item": {
+        "nickname": "IRA SAVINGS",
+        "balance": "$53,105.75",
+        "accountNumber": "*******200",
+        "accountId": "13679S0200",
+        "previewMeta": [
+          {
+            "displayName": "Note",
+            "displayValue": "Savings",
+            "callOutText": "",
+            "callOutIconClass": "fa-circle",
+            "callOutDataUrl": ""
+          }
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13679S0200"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679S0200"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679S0200"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": false,
+      "sortOrder": 5,
+      "item": {
+        "nickname": "SAVINGS",
+        "balance": "$0.00",
+        "accountNumber": "*******001",
+        "accountId": "13777S0001",
+        "previewMeta": [
+        
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13777S0001"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13777S0001"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13777S0001"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": false,
+      "sortOrder": 6,
+      "item": {
+        "nickname": "CLASSIC CHECKING",
+        "balance": "$9,139.91",
+        "accountNumber": "*******020",
+        "accountId": "13777S0020",
+        "previewMeta": [
+          {
+            "displayName": "Type",
+            "displayValue": "Deposit",
+            "callOutText": "",
+            "callOutIconClass": "fa-check",
+            "callOutDataUrl": ""
+          },
+          {
+            "displayName": "Note",
+            "displayValue": "Checking",
+            "callOutText": "",
+            "callOutIconClass": "fa-circle",
+            "callOutDataUrl": ""
+          }
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13777S0020"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13777S0020"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13777S0020"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": false,
+      "sortOrder": 8,
+      "item": {
+        "nickname": "IRA SAVINGS",
+        "balance": "$37,033.88",
+        "accountNumber": "*******200",
+        "accountId": "13777S0200",
+        "previewMeta": [
+          {
+            "displayName": "Type",
+            "displayValue": "Deposit",
+            "callOutText": "",
+            "callOutIconClass": "fa-check",
+            "callOutDataUrl": ""
+          },
+          {
+            "displayName": "Note",
+            "displayValue": "Savings",
+            "callOutText": "",
+            "callOutIconClass": "fa-circle",
+            "callOutDataUrl": ""
+          }
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13777S0200"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13777S0200"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13777S0200"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": false,
+      "sortOrder": 9,
+      "item": {
+        "nickname": "72 MONTH NEW AUTO",
+        "balance": "$14,279.67",
+        "accountNumber": "*******020",
+        "accountId": "13679L0020",
+        "previewMeta": [
+          {
+            "displayName": "Type",
+            "displayValue": "Loan",
+            "callOutText": "",
+            "callOutIconClass": "fa-check",
+            "callOutDataUrl": ""
+          }
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13679L0020"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679L0020"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679L0020"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "previewTypeID": 1,
+      "hidden": false,
+      "favorite": false,
+      "sortOrder": 10,
+      "item": {
+        "nickname": "15 YEAR FIXED MORTGAGE",
+        "balance": "$289,659.56",
+        "accountNumber": "*******110",
+        "accountId": "13679L0110",
+        "previewMeta": [
+          {
+            "displayName": "Type",
+            "displayValue": "Loan",
+            "callOutText": "",
+            "callOutIconClass": "fa-check",
+            "callOutDataUrl": ""
+          }
+        ],
+        "metaAction": {
+          "actionType": 1,
+          "tileCode": "7673C475-29AC-4046-B3B8-9AD09F00F021",
+          "tileVersion": "2.2.1",
+          "openData": {
+            "actionType": 3,
+            "component": "AccountDetailsPage",
+            "pageName": "AccountDetails",
+            "openData": {
+              "data": {
+                "detailsBackground": {
+                  "dataSource": {
+                    "type": 1,
+                    "connectorName": "CDPAccountConnector",
+                    "connectorMethod": "getDetailsBackground",
+                    "connectorVersion": "2.2.0",
+                    "params": {
+                      "accountId": "13679L0110"
+                    }
+                  }
+                },
+                "transactionsModal": {
+                  "data": {
+                    "transactionHero": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsHero",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679L0110"
+                        }
+                      }
+                    },
+                    "transactionList": {
+                      "dataSource": {
+                        "type": 1,
+                        "connectorName": "CDPAccountConnector",
+                        "connectorMethod": "getDetailsList",
+                        "connectorVersion": "2.2.0",
+                        "params": {
+                          "accountId": "13679L0110"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

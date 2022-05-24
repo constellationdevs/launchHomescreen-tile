@@ -1,0 +1,749 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+/* slate */
+/* storm */
+/* cloud */
+/* border */
+ons-toolbar-button:focus,
+button:focus,
+.button:focus,
+.button[role=button]:focus,
+.button[role=link]:focus,
+.fab:focus,
+ons-card:focus,
+.cdpCard:focus {
+  box-shadow: 0 0 0 2px #3F93D2 !important;
+  outline: none !important;
+}
+.list-item[tappable]:focus,
+.list-item[role=button]:focus,
+.list-item[role=link]:focus,
+.select-input:focus,
+ons-card:focus {
+  border: 2px solid #3F93D2 !important;
+  outline: none !important;
+  margin: 0;
+}
+.page__background {
+  background-color: #fff;
+}
+.cdp_page_container .cdp_list_container {
+  background-color: #DFE9F3;
+  position: relative;
+  height: 100%;
+  padding-bottom: 80vh;
+  overflow-y: auto;
+}
+@keyframes cdp_opactiy-pulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.cdpPulseLoader {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+.loaderPlaceholder {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+div.cdpLanding {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+ons-dialog p {
+  text-align: center;
+}
+ons-dialog label {
+  font-weight: 700;
+  padding-left: 20px;
+  color: #26323D;
+  opacity: 70%;
+}
+#password input {
+  background-color: #fff;
+  padding: 20px;
+}
+.bold {
+  font-weight: 700;
+}
+.flex-column-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+}
+.flex-column-buttons .button--large {
+  width: 100%;
+  min-height: 42px;
+}
+.flex-column-buttons .button--large:nth-last-child(2) {
+  margin: 0 0 10px 0;
+}
+.button--large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: unset;
+}
+button:disabled,
+button[disabled],
+.button:disabled,
+.button[disabled],
+ons-button:disabled {
+  color: rgba(38, 50, 61, 0.99) !important;
+  background-color: rgba(170, 177, 184, 0.5) !important;
+  opacity: unset !important;
+}
+#splitterMenu {
+  width: 300px !important;
+  background-color: transparent !important;
+}
+#splitterMenu .page__content,
+#splitterMenu .page__background {
+  background-color: transparent !important;
+}
+#splitterMenu #splitterList,
+#splitterMenu #servicesList {
+  width: 94%;
+  float: right;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+#splitterMenu #splitterList ons-list-item,
+#splitterMenu #servicesList ons-list-item {
+  background-color: #fff;
+  color: #26323D;
+  cursor: pointer;
+}
+#splitterMenu #splitterList ons-list-item > div,
+#splitterMenu #servicesList ons-list-item > div {
+  border-bottom: none;
+}
+#splitterMenu #splitterList ons-list-item ons-icon,
+#splitterMenu #servicesList ons-list-item ons-icon {
+  color: #26323D;
+  width: 32px;
+}
+#splitterMenu #splitterList {
+  height: 100%;
+}
+.cdpLanding .toolbar + .page__background {
+  top: 0 !important;
+}
+.cdpLandingbody {
+  font-size: 14px;
+}
+.cdpLanding #appLoading {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cdpLanding #appLoading .hide {
+  display: none;
+}
+.cdpLanding ons-toolbar {
+  height: 65px;
+  padding: 9px;
+}
+.cdpLanding ons-toolbar .navBack {
+  width: 30px;
+}
+.cdpLanding .toolbar + .page__background + .page__content {
+  top: 65px;
+}
+.cdpLanding [class*="col"] {
+  padding: 0;
+}
+.cdpLanding .row {
+  margin: 0;
+}
+.cdpLanding .primaryActions .primaryBtn {
+  background-color: #00a950;
+}
+.cdpLanding #homePage .page__content {
+  transition: bottom 0.6s ease-in;
+}
+.cdpLanding #homePage .page__content ons-splitter {
+  background-color: #fff;
+}
+.cdpLanding #homePage .page__content #msgBadge {
+  background: #D92C2C;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  bottom: 9px;
+  left: 40px;
+  border: thin solid #fff;
+}
+.cdpLanding #homePage .page__content #msgBadge.show {
+  display: inline-block;
+}
+.cdpLanding #homePage .headerBar {
+  padding: 9px;
+  background: #fff;
+  overflow: visible;
+  height: 65px;
+  margin: 0 auto;
+}
+.cdpLanding #homePage .headerBar .userProfile {
+  font-size: 26px;
+}
+.cdpLanding #homePage .headerBar .userProfile,
+.cdpLanding #homePage .headerBar .addTiles,
+.cdpLanding #homePage .headerBar .addItem {
+  color: #000;
+}
+.cdpLanding #homePage .headerBar h1 {
+  color: #b4c3d2;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.cdpLanding #homePage .headerBar h2 {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  margin: 0;
+  text-align: center;
+  transition: font-size 1s ease;
+}
+.cdpLanding #homePage .headerBar.balance {
+  height: 65px;
+}
+.cdpLanding #homePage .headerBar.balance h1 {
+  font-weight: bold;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cdpLanding #homePage .headerBar.balance h2 {
+  font-size: 32px;
+  line-height: 32px;
+}
+.cdpLanding #homePage .headerBar.balance div:last-child {
+  text-align: right;
+}
+.cdpLanding #homePage .headerBar #imgToolbar {
+  width: 44px;
+  height: 44px;
+}
+.cdpLanding #homePage.AccountListFullView #tmpTiles {
+  display: none;
+}
+.cdpLanding .tileContainer {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.cdpLanding .tileContainer .card {
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+}
+.cdpLanding .sortableGhost {
+  opacity: 0.5;
+  background: #C8EBFB;
+  border: dashed;
+  border-radius: 6px;
+}
+.cdpLanding .toast--toastEdit {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 128px !important;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  border-radius: 30px;
+  background-color: #00a950;
+  opacity: 0.85;
+}
+.cdpLanding .toast--toastEdit__message {
+  margin: 0;
+  text-align: center;
+}
+.cdpLanding.editPage .openTile {
+  display: none;
+}
+.cdpLanding #btnCloseMove,
+.cdpLanding #btnCloseAcctList {
+  background-color: #00a950;
+  color: #fff;
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.15);
+  position: fixed;
+}
+.cdpLanding #btnCloseMove.hide,
+.cdpLanding #btnCloseAcctList.hide {
+  display: none;
+}
+.cdpLanding #cardActions ons-icon {
+  width: 50px;
+}
+.cdpLanding #btnCloseMove .ion-close {
+  vertical-align: 0;
+}
+.cdpLanding .action-sheet-button {
+  text-align: left;
+  padding-left: 16px;
+}
+.cdpLanding.ios .action-sheet div .action-sheet-button:last-of-type,
+.cdpLanding.ios .action-sheet div .action-sheet-button:first-child {
+  border-radius: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.cdpLanding #CardResizeContainer {
+  opacity: 0.9;
+  position: fixed;
+  bottom: -275px;
+  left: 0;
+  right: 0;
+  transition: bottom 0.6s ease-in-out;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.cdpLanding #CardResizeContainer ons-list {
+  border-radius: 8px;
+}
+.cdpLanding #CardResizeContainer ons-list ons-list-item {
+  white-space: nowrap;
+}
+.cdpLanding #CardResizeContainer.show {
+  bottom: 94px;
+}
+.cdpLanding .cdp_hero {
+  background-color: transparent;
+  align-items: inherit;
+  max-height: none;
+  padding: 0;
+}
+.cdpLanding #tmpHero.fullScreen {
+  height: 100% !important;
+  overflow-y: scroll;
+}
+.cdpLanding #tmpHero.fullScreen #swipeDownContainer,
+.cdpLanding #tmpHero.fullScreen .carouselNav,
+.cdpLanding #tmpHero.fullScreen #acctSwipeDown {
+  display: none;
+}
+.cdpLanding #tmpHero #AccountListRetryContainer,
+.cdpLanding #tmpHero #FavoriteRetryContainer {
+  position: relative;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cdpLanding #tmpHero #AccountListRetryContainer ons-icon,
+.cdpLanding #tmpHero #FavoriteRetryContainer ons-icon {
+  font-size: 18px;
+}
+.cdpLanding #tmpHero #AccountListRetryContainer span,
+.cdpLanding #tmpHero #FavoriteRetryContainer span {
+  padding: 0 9px;
+  vertical-align: top;
+}
+.cdpLanding #tmpHero #AccountListRetryContainer .retryMsg,
+.cdpLanding #tmpHero #FavoriteRetryContainer .retryMsg {
+  font-size: 18px;
+  padding: 18px;
+  color: #26323D;
+}
+.cdpLanding #tmpHero.loading {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+.cdpLanding #tmpHero #acctContainer {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.cdpLanding #tmpHero #acctContainer .acctChartContainer {
+  padding-top: 38px;
+}
+.cdpLanding #tmpHero #acctContainer .acctChartContainer #no-data {
+  color: black;
+  display: none;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10%;
+}
+.cdpLanding #tmpHero #swipeDownContainer {
+  background-color: #fff;
+}
+.cdpLanding #tmpHero #swipeDownContainer .carouselNav {
+  background-color: #fff;
+  position: relative;
+}
+.cdpLanding #tmpHero #swipeDownContainer .carouselNav ol {
+  padding-inline-start: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.cdpLanding #tmpHero #swipeDownContainer .carouselNav li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 23px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-clip: padding-box;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.cdpLanding #tmpHero #swipeDownContainer .carouselNav li:focus {
+  outline: none !important;
+}
+.cdpLanding #tmpHero #swipeDownContainer .carouselNav li:focus span {
+  box-shadow: 0 0 0 2px #3F93D2 !important;
+}
+.cdpLanding #tmpHero #swipeDownContainer .carouselNav li.active span {
+  background-color: #00a950;
+}
+.cdpLanding #tmpHero #swipeDownContainer .carouselNav li span {
+  background-color: #DFE9F3;
+  margin-top: 10px;
+  width: 30px;
+  height: 3px;
+  display: block;
+}
+.cdpLanding #tmpHero #swipeDownContainer #acctSwipeDown {
+  height: 17px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 10px;
+  z-index: 999;
+}
+.cdpLanding #tmpHero #swipeDownContainer #acctSwipeDown span {
+  background-color: #DFE9F3;
+  width: 25%;
+  height: 4px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.cdpLanding #tmpHero #FullScreenAcctHeader {
+  display: none;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.cdpLanding #tmpHero #FullScreenAcctHeader span {
+  color: #AAB1B8;
+  text-transform: uppercase;
+  line-height: 42px;
+}
+.cdpLanding #tmpHero #FullScreenAcctHeader ons-button {
+  background-color: transparent;
+  float: right;
+}
+.cdpLanding #tmpHero #FullScreenAcctHeader ons-button ons-icon {
+  font-size: 18px;
+  color: #AAB1B8;
+}
+.cdpLanding #tmpHero #acctContainer.desktop {
+  height: 434px;
+  transition: height 0.2s ease-in-out;
+}
+.cdpLanding #tmpHero #acctContainer.desktop .acctList {
+  margin: 0px auto;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  height: 370px;
+}
+.cdpLanding #tmpHero #acctContainer.desktop .acctList .accountCard {
+  margin: 10px;
+  width: 315px;
+  height: 163px;
+}
+.cdpLanding #tmpHero #acctContainer.native {
+  height: 190px;
+}
+.cdpLanding #tmpHero #acctContainer.native ons-list {
+  background-image: none;
+}
+.cdpLanding #tmpHero #acctContainer.native.closed {
+  transition: height 0.2s ease-in-out;
+  height: 0;
+}
+.cdpLanding #tmpHero #acctContainer.native.closed .acctChartContainer {
+  visibility: hidden;
+}
+.cdpLanding #tmpHero #acctContainer.native #balanceHeader {
+  text-align: center;
+  position: relative;
+}
+.cdpLanding #tmpHero #acctContainer.native #balanceHeader h1 {
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #b4c3d2;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cdpLanding #tmpHero #acctContainer.native #balanceHeader h2 {
+  font-size: 28px;
+  line-height: 28px;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.cdpLanding #tmpHero #acctContainer.native .acctList {
+  background-image: none;
+  display: flex;
+  flex-flow: column;
+}
+.cdpLanding #tmpHero #acctContainer.native .acctList.is-animating {
+  transition: transform 400ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+.cdpLanding #tmpHero #acctContainer.native.fullScreen {
+  height: 100%;
+  overflow-y: scroll;
+  transition: height 0.2s ease-in-out;
+}
+.cdpLanding #tmpHero #acctContainer.native.fullScreen #FullScreenAcctHeader {
+  display: block;
+}
+.cdpLanding.native #tmpHero {
+  background-color: #fff;
+}
+.cdpLanding.native #homePage .cdp_hero #tmpHero {
+  height: 230px;
+  transition: height 0.7s linear;
+}
+.cdpLanding.native #homePage .cdp_hero #tmpHero #acctContainer {
+  transition: height 0.7s linear;
+}
+.cdpLanding.native #homePage .cdp_hero #tmpHero #acctSwipeDown {
+  position: relative;
+}
+.cdpLanding.native #homePage.shrink .cdp_hero #tmpHero {
+  height: 165px;
+  min-height: unset;
+}
+.cdpLanding.native #homePage.shrink .cdp_hero #tmpHero #acctContainer {
+  height: 125px;
+}
+.cdpLanding.native #homePage.shrink .cdp_hero .accountCard {
+  min-height: unset;
+}
+.cdpLanding.native #homePage.shrink .cdp_hero .accountCard .cardBody {
+  display: none;
+}
+.cdpLanding.native #swipeDownContainer {
+  height: 40px;
+}
+.cdpLanding #tmpTiles {
+  padding-top: 18px;
+  padding-bottom: 60vh;
+  margin: 0 auto;
+}
+.cdpLanding #tmpTiles.loading {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+  height: 100%;
+}
+.cdpLanding #tmpTiles #TilesHeaderContainer {
+  margin: 0 auto;
+}
+.cdpLanding #tmpTiles #TilesHeaderContainer span {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  margin-left: 9px;
+}
+.cdpLanding #tmpTiles #TilesHeaderContainer ons-button {
+  background-color: transparent;
+  float: right;
+  height: 26px;
+  line-height: 26px;
+  padding-top: 0;
+}
+.cdpLanding #tmpTiles #TilesHeaderContainer ons-button ons-icon {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+.cdpLanding #accountCatalogPage .catalogContainer,
+.cdpLanding #catalogPage .catalogContainer {
+  width: 335px;
+  margin: 0 auto;
+}
+.cdpLanding #accountCatalogPage .catalogContainer.accountList,
+.cdpLanding #catalogPage .catalogContainer.accountList {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+}
+.cdpLanding.desktop #tmpHero {
+  height: 434px;
+}
+.cdpLanding.desktop #tmpHero.moving #acctContainer {
+  height: 100%;
+  transition: height 0.2s ease-in-out;
+}
+.cdpLanding.desktop #tmpHero.moving #acctContainer .navButton,
+.cdpLanding.desktop #tmpHero.moving #acctContainer .carouselNav {
+  display: none;
+}
+.cdpLanding.desktop #tmpHero #btnViewAllAccts {
+  height: 26px;
+  background-color: transparent;
+  color: #26323D;
+  text-decoration: underline;
+  padding: 0;
+}
+.cdpLanding.desktop #tmpHero #btnViewAllAccts:hover {
+  cursor: pointer;
+}
+.cdpLanding.desktop #viewAccountsPage #myAcctsListItemsContainer {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 50vh;
+}
+.cdpLanding.desktop #viewAccountsPage .chartCarousel {
+  display: none !important;
+}
+.cdpLanding.desktop #viewAccountsPage .acctList {
+  margin: 0px auto;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 18px;
+}
+.cdpLanding.desktop #viewAccountsPage ons-fab {
+  background-color: #00a950;
+}
+.cdpLanding.desktop #viewAccountsPage ons-toolbar ons-toolbar-button {
+  color: #000;
+}
+.cdpLanding.desktop #homePage .cdp_hero {
+  height: 434px;
+  transition: height 1s;
+}
+.cdpLanding.desktop #homePage.shrink .cdp_hero {
+  transition: height 1s;
+  height: 184px;
+}
+.cdpLanding.desktop #homePage.shrink .cdp_hero #tmpHero #acctContainer {
+  height: 184px;
+}
+.cdpLanding.desktop #homePage.shrink .cdp_hero .accountCard {
+  min-height: unset;
+}
+.cdpLanding.desktop #homePage.shrink .cdp_hero .accountCard .cardBody {
+  display: none;
+}
+.fa-text {
+  margin-left: 5px;
+}
+.add-service-card {
+  width: 90%;
+  padding: 2.5%;
+  margin: 5% auto;
+  font-size: 16px;
+  max-width: 1200px;
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.12);
+}
+.sup-currency {
+  font-size: 0.7em;
+  top: -0.3em;
+}
+@media only screen and (min-width: 1155px) {
+  #tmpTiles {
+    width: 1005px;
+  }
+  .headerBar {
+    width: 1155px;
+  }
+  .desktop .acctList {
+    width: 1005px;
+  }
+}
+@media only screen and (min-width: 773px) and (max-width: 1154px) {
+  #tmpTiles {
+    width: 670px;
+  }
+  .headerBar {
+    width: 85%;
+    min-width: 670px;
+  }
+  .desktop .acctList {
+    width: 670px;
+  }
+}
+@media only screen and (max-width: 772px) {
+  #tmpTiles {
+    width: 335px;
+  }
+  .headerBar {
+    width: 85%;
+    min-width: 335px;
+  }
+  .desktop #chevronContainer {
+    width: 335px;
+    margin-left: -168px;
+  }
+  .desktop .acctList {
+    width: 335px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #tmpTiles .headerBar {
+    width: 320px;
+  }
+  .desktop .acctList {
+    width: 320px;
+  }
+}

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+/* slate */
+/* storm */
+/* cloud */
+/* border */
+ons-toolbar-button:focus,
+button:focus,
+.button:focus,
+.button[role=button]:focus,
+.button[role=link]:focus,
+.fab:focus,
+ons-card:focus,
+.cdpCard:focus {
+  box-shadow: 0 0 0 2px #3F93D2 !important;
+  outline: none !important;
+}
+.list-item[tappable]:focus,
+.list-item[role=button]:focus,
+.list-item[role=link]:focus,
+.select-input:focus,
+ons-card:focus {
+  border: 2px solid #3F93D2 !important;
+  outline: none !important;
+  margin: 0;
+}
+.page__background {
+  background-color: #fff;
+}
+.cdp_page_container .cdp_list_container {
+  background-color: #DFE9F3;
+  position: relative;
+  height: 100%;
+  padding-bottom: 80vh;
+  overflow-y: auto;
+}
+@keyframes cdp_opactiy-pulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.cdpPulseLoader {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}
+.loaderPlaceholder {
+  background: #b4c3d2;
+  animation: cdp_opactiy-pulse 1.75s infinite alternate;
+  border-radius: 4px;
+}

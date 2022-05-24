@@ -1,0 +1,79 @@
+  @import 'variables';
+ @primaryTileColor: @primaryThemeColor;
+ @btnViewAllAccounts: @fontColor;
+@focusColor: @blue;
+
+ons-toolbar-button,
+button,
+.button,
+.button[role=button],
+.button[role=link] ,
+.fab,
+ons-card,
+.cdpCard {
+
+    &:focus{
+        box-shadow: 0 0 0 2px @focusColor !important;
+        outline: none !important;
+    }
+
+}
+
+
+.list-item[tappable],
+.list-item[role=button],
+.list-item[role=link],
+.select-input,
+ons-card
+ {
+ &:focus {
+     border: 2px solid @focusColor  !important;
+      outline: none !important;
+     margin: 0;
+ }
+}
+
+
+ .page__background {
+     background-color: @white;
+ }
+
+ .cdp_page_container {
+    // margin-top: 65px;
+     // overflow: auto;
+
+     .cdp_list_container {
+         background-color: @lightGrey;
+         position: relative;
+         height: 100%;
+         padding-bottom: 80vh;
+         overflow-y: auto;
+     }
+
+ }
+
+ // Loading Animation
+ @keyframes cdp_opactiy-pulse {
+     from {
+
+         opacity: .6;
+     }
+
+     to {
+
+         opacity: .2;
+     }
+
+ }
+
+
+ .cdpPulseLoader {
+     background: @mediumGrey;
+     animation: cdp_opactiy-pulse 1.75s infinite alternate;
+     border-radius: 4px;
+ }
+
+ .loaderPlaceholder {
+     .cdpPulseLoader();
+
+ }
