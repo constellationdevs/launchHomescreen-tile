@@ -1,0 +1,40 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint",
+      "react-hooks"
+    ],
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/prop-types": "off",
+      "no-var-requires": true,
+      "object-literal-sort-keys": false,
+      "no-bind": false,
+      "no-console": 1,
+      "ordered-imports": false,
+      "jsx-no-lambda": false,
+      "class-name": false,
+      "member-access": false,
+      "jsx-self-close": false,
+      "no-unused-expression": false,
+      "no-unused-variable": [false],
+      "no-bitwise": 0,
+      "curly": [true, "ignore-same-line"],
+      "react/jsx-no-bind":[true,{"allowBind": true  }]
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    }
+  }

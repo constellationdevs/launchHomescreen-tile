@@ -90,6 +90,7 @@ export default class TilePreviewTemplate3 extends Component<ITilePropModel, any>
                   <h1>{this.props.data.tileTitle}</h1>
                   <h2>{this.props.data.CallOut}</h2>
                   <h3>{this.props.data.Details1}</h3>
+                  <h4>{this.props.data.Details2}</h4>
                 </div>
                 {img}
                 <div className="openTile">
