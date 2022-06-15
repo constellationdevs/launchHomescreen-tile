@@ -5,7 +5,7 @@
 
 To run locally
 ```
-yarn && yarn start
+yarn && yarn dev
 ```
 
 # Configuration
