@@ -7,7 +7,7 @@ import container, { tile } from "./container.svc";
 import _ from "lodash";
 import { Navigator } from "react-onsenui";
 import ErrorPage from "../pages/ErrorPage";
-import HomePage from "../pages/HomePage";
+import HomePage from "../pages/HomePage2";
 import DataSourceTypeEnum from "../models/enums/DataSourceType.enum";
 import DataSourceModel from "../models/DataSource.model";
 

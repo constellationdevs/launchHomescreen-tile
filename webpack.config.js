@@ -46,7 +46,6 @@ const baseConfig = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   }
-
 };
 
 

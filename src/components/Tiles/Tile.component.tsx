@@ -9,6 +9,8 @@ import container from "../../services/container.svc";
 import TilePreviewTemplate1 from "./TilePreivewSmall.template1.component";
 import TilePreviewTemplate3 from "./TilePreviewLarge.template3.component";
 import TilePreviewTemplate2 from "./TilePreviewMedium.template2.component";
+import AccountWidget from "../Account/AccountPreviews/AccountWidget.component";
+
 
 export interface ITileProp extends IBasePropsModel {
   data: TileModel;
@@ -82,6 +84,8 @@ export default class TileComponent extends Component<ITileProp, ITileState> {
         return <TilePreviewTemplate2 data={this.TileData} tileConfig={this.props.tileConfig} navigator={this.props.navigator}></TilePreviewTemplate2>;
       case TilePreviewEnum.SummaryList:
         return <TilePreviewTemplate3 data={this.TileData} tileConfig={this.props.tileConfig} navigator={this.props.navigator}></TilePreviewTemplate3>;
+      case TilePreviewEnum.Widget:
+        return <AccountWidget></AccountWidget>
       default:
         return <TilePreviewTemplate1 data={this.TileData} tileConfig={this.props.tileConfig} navigator={this.props.navigator}></TilePreviewTemplate1>;
     }
