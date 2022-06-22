@@ -480,6 +480,8 @@
       }
   }
 
+
+
   .summarylistCard {
 
       width: 335px;
@@ -493,6 +495,63 @@
 
           .cardBody {
               height: 128px;
+          }
+      }
+  }
+
+  .accountWidgetCard {
+      width: 600px;
+      ons-card {
+          min-height: 90px;
+
+          .cardHeader {
+              padding: 16px;
+          }
+
+          .cardBody {
+              padding: 0;
+              height: auto;
+          }
+          .list-item__right, .list-item__center {
+              display: flex;
+              flex-direction: column;
+          }
+
+          .list-item__center{
+              align-items: initial;
+          }
+          .list-header{
+              background-color: @primaryThemeColor;
+              color: @white;
+          }
+          .status-icon {
+              font-size: 15px;
+              line-height: 14px;
+              margin-left: 5px;
+          }
+
+          .sub-title {
+
+          }
+
+          .subCallout {
+              background-color: @lightGrey;
+              color: @lightBlack;
+              font-weight: bold;
+              border-radius: 9px;
+              padding: 2px 5px;
+              font-size:10px;
+          }
+
+          .success{
+              color: @lightBlack;
+          }
+
+          .danger {
+              color: @red;
+          }
+          .warning {
+              color: @yellowOrange;
           }
       }
   }
