@@ -499,6 +499,44 @@
       }
   }
 
+  .modal-card {
+      max-width: 325px;
+      margin: auto;
+
+      .modal-card-header{
+          background-color: @primaryThemeColor;
+          font-size:14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          height: 45px;
+          padding: 15px 0 0 10px;
+
+      }
+      .modal-card-body{
+          padding:15px;
+      }
+      .modal-card-title{
+          color: @lightBlack;
+          font-size: 15px;
+          font-weight: 700;
+      }
+      .modal-card-text{
+          color: @lightBlack;
+          color: fade(@lightBlack, 70%);
+          font-size:14px;
+      }
+      .modal-card-button{
+          width:100%;
+          display: flex;
+          .btn{
+              background-color:@primaryThemeColor;
+              width:225px;
+              display: block;
+              margin:15px auto 0;
+          }
+      }
+  }
+
   .accountWidgetCard {
       width: 600px;
       ons-card {
@@ -512,14 +550,31 @@
               padding: 0;
               height: auto;
           }
+
+          .list-item > div {
+              border-bottom: solid 2px @mediumGrey;
+          }
+
+          .list-item:last-child > div {
+              border-bottom: none;
+          }
+
           .list-item__right, .list-item__center {
               display: flex;
               flex-direction: column;
           }
 
+          .list-item__right {
+             width:75px;
+          }
+
           .list-item__center{
               align-items: initial;
+                ons-icon{
+                    cursor: pointer;
+            }
           }
+
           .list-header{
               background-color: @primaryThemeColor;
               color: @white;
@@ -531,6 +586,7 @@
           }
 
           .sub-title {
+          color: fade(@lightBlack, 70%);
 
           }
 
@@ -541,6 +597,8 @@
               border-radius: 9px;
               padding: 2px 5px;
               font-size:10px;
+              margin-top: 3px;
+              cursor:pointer;
           }
 
           .success{

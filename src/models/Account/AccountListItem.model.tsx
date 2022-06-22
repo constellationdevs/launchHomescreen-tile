@@ -7,6 +7,7 @@ export default class AccountListItemModel {
     "statusIcon": string;
     "title": string;
     "subTitle": string;
+    "warningMessage": string;
     "callout":  string;
     "subCallout": string;
     "metaAction": MetaActionModel;

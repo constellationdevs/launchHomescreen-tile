@@ -1116,6 +1116,105 @@ ons-card.acctPreviewCard .cardBody .preview-value {
 .summarylistCard ons-card .cardBody {
   height: 128px;
 }
+.modal-card {
+  max-width: 325px;
+  margin: auto;
+}
+.modal-card .modal-card-header {
+  background-color: #00a950;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 45px;
+  padding: 15px 0 0 10px;
+}
+.modal-card .modal-card-body {
+  padding: 15px;
+}
+.modal-card .modal-card-title {
+  color: #26323D;
+  font-size: 15px;
+  font-weight: 700;
+}
+.modal-card .modal-card-text {
+  color: #26323D;
+  color: rgba(38, 50, 61, 0.7);
+  font-size: 14px;
+}
+.modal-card .modal-card-button {
+  width: 100%;
+  display: flex;
+}
+.modal-card .modal-card-button .btn {
+  background-color: #00a950;
+  width: 225px;
+  display: block;
+  margin: 15px auto 0;
+}
+.accountWidgetCard {
+  width: 600px;
+}
+.accountWidgetCard ons-card {
+  min-height: 90px;
+}
+.accountWidgetCard ons-card .cardHeader {
+  padding: 16px;
+}
+.accountWidgetCard ons-card .cardBody {
+  padding: 0;
+  height: auto;
+}
+.accountWidgetCard ons-card .list-item > div {
+  border-bottom: solid 2px #b4c3d2;
+}
+.accountWidgetCard ons-card .list-item:last-child > div {
+  border-bottom: none;
+}
+.accountWidgetCard ons-card .list-item__right,
+.accountWidgetCard ons-card .list-item__center {
+  display: flex;
+  flex-direction: column;
+}
+.accountWidgetCard ons-card .list-item__right {
+  width: 75px;
+}
+.accountWidgetCard ons-card .list-item__center {
+  align-items: initial;
+}
+.accountWidgetCard ons-card .list-item__center ons-icon {
+  cursor: pointer;
+}
+.accountWidgetCard ons-card .list-header {
+  background-color: #00a950;
+  color: #fff;
+}
+.accountWidgetCard ons-card .status-icon {
+  font-size: 15px;
+  line-height: 14px;
+  margin-left: 5px;
+}
+.accountWidgetCard ons-card .sub-title {
+  color: rgba(38, 50, 61, 0.7);
+}
+.accountWidgetCard ons-card .subCallout {
+  background-color: #DFE9F3;
+  color: #26323D;
+  font-weight: bold;
+  border-radius: 9px;
+  padding: 2px 5px;
+  font-size: 10px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.accountWidgetCard ons-card .success {
+  color: #26323D;
+}
+.accountWidgetCard ons-card .danger {
+  color: #D92C2C;
+}
+.accountWidgetCard ons-card .warning {
+  color: #e09f1d;
+}
 .acctPreviewCard2 {
   width: 100%;
 }
@@ -1224,3 +1323,4 @@ ons-card.acctPreviewCard .cardBody .preview-value {
 .cdp_hero {
   flex-shrink: 0;
 }
+/*# sourceMappingURL=tile.css.map */
