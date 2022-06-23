@@ -55,9 +55,12 @@ const devConfig = {
   plugins: [new HtmlWebpackPlugin({
     template: path.resolve(__dirname, 'public/index.html'),
     filename: 'index.html'
-  })]
+  })],
+  devServer: {
+    open: true,
+    port: 3000
+  }
 };
-
 
 
 const mainConfig =  {
