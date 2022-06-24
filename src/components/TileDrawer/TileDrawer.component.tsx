@@ -62,7 +62,7 @@ export default class TileDrawer extends Component<ITileDrawerProps, ITileDrawerS
       <>
         <div id="tmpTiles">
           <div id="TilesHeaderContainer">
-            <span>My Tiles</span>
+            <span>My Widgets</span>
             <Button>
               <Icon icon="fa-plus"></Icon>
             </Button>

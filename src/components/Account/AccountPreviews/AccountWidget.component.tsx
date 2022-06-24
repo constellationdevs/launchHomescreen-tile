@@ -18,7 +18,7 @@ export default class AccountWidget extends Component<any, any> {
         }
     }
 
-    balanceWarning = "The balance on your account is near the limit. Ensure your balance remains above $5.00 in order to remain enrolled in the No-Fee Savings Account"
+    balanceWarning = "The balance on your account is near the limit. Ensure your balance remains above $5.00 in order to remain enrolled in the No-Fee Checking Account"
     balanceError = "The balance on your account is under the limit. Ensure your balance remains above $2,000 in order to remain enrolled in the No-Fee Money Market"
     creditCardError = "The payment on your account is due in 5 days.  Please visit the transfer tile to make your payment before June 27th"
 
@@ -41,7 +41,7 @@ export default class AccountWidget extends Component<any, any> {
                 "quickActions": [
                     {
                         "iconImg": "fas fa-exchange",
-                        "label": "transfer",
+                        "label": "Make a Transfer",
                         "metaAction": {
                             "actionType": 1,
                             "tileCode": "savGoal",
@@ -57,7 +57,7 @@ export default class AccountWidget extends Component<any, any> {
                 "warningMessage":"balanceWarning",
                 "title": "Classic Checking",
                 "subTitle": "****5467",
-                "callout": "$5.00",
+                "callout": "$6.00",
                 "subCallout": "Options",
                 "metaAction": {
                     "actionType": 1,

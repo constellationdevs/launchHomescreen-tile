@@ -724,9 +724,6 @@ ons-button:disabled {
   }
 }
 @media only screen and (max-width: 772px) {
-  #tmpTiles {
-    width: 335px;
-  }
   .headerBar {
     width: 85%;
     min-width: 335px;
@@ -1140,6 +1137,7 @@ ons-card.acctPreviewCard .cardBody .preview-value {
   color: #26323D;
   color: rgba(38, 50, 61, 0.7);
   font-size: 14px;
+  margin-top: 10px;
 }
 .modal-card .modal-card-button {
   width: 100%;
@@ -1152,7 +1150,7 @@ ons-card.acctPreviewCard .cardBody .preview-value {
   margin: 15px auto 0;
 }
 .accountWidgetCard {
-  width: 600px;
+  width: 100%!important;
 }
 .accountWidgetCard ons-card {
   min-height: 90px;
